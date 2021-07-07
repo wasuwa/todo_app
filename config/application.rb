@@ -34,5 +34,8 @@ module TodoApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.generators do |g|
+      g.test_framework  :test_unit, fixture: false
+    end
   end
 end
