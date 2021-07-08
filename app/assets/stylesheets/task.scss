@@ -1,0 +1,25 @@
+.task {
+  max-width: 700px;
+  &__container {
+    display: flex;
+    background: #fff;
+    padding: 30px;
+    .task__main {
+      &--title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      &--description {
+        font-size: 14px;
+        line-height: 1.4em;
+      }
+    }
+    &--done {
+      font-size: 22px;
+      font-weight: 700;
+      color: #00bfff;
+      padding-left: 20px;
+    }
+  }
+}
