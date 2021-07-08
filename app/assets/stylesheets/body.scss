@@ -1,8 +1,11 @@
 body {
   color: #333;
   background: #eee;
+  a {
+    color: #333;
+  }
+  .component {
+    margin: 30px 50px;
+  }
 }
 
-.component {
-  margin: 0 50px;
-}
