@@ -72,13 +72,11 @@ a {
 textarea {
   appearance: none;
   resize: none;
-  padding: 0;
   border: 0;
   outline: none;
 }
 
 input[type="text"] {
-  padding: 0;
   border: none;
   border-radius: 0;
   outline: none;
@@ -87,7 +85,6 @@ input[type="text"] {
 button,
 input[type="submit"] {
     appearance: none;
-    padding: 0;
     border: none;
     outline: none;
 }
