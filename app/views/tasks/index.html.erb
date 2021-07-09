@@ -1,7 +1,7 @@
 <section class="task">
   <%= form_with model: @task, class: "task__form" do |f| %>
-    <%= f.text_field :title, class: "task__form--title" %>
-    <%= f.text_area :description, class: "task__form--description" %>
+    <%= f.text_field :title, class: "task__form--title", placeholder: "タスク名" %>
+    <%= f.text_area :description, class: "task__form--description", placeholder: "詳細" %>
     <%= f.submit "作成", class: "task__form--button" %>
   <% end %>
 
