@@ -15,7 +15,7 @@
           <%= task.description %>
         </p>
       </div>
-      <%= link_to "✕", root_path, class: "task__container--done"%>
+      <%= link_to "✕", task_path(task.id), method: :delete, class: "task__container--done"%>
     </div>
   <% end %>
 </section>
