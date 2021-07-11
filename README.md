@@ -1,24 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# TODOアプリ
+## 概要
+タスク管理サービスです。
+## 背景
+日々のタスクを管理できるサービスが欲しいと思い作成しました。Railsの知見を深める一環でもあります。
