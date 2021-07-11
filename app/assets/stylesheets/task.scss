@@ -18,10 +18,12 @@
       }
     }
     &--done {
+      display: block;
       font-size: 22px;
       font-weight: 700;
       color: #00bfff;
       padding-left: 20px;
+      margin-left: auto;
     }
   }
   &__form {
