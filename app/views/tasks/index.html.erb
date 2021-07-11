@@ -1,21 +1,6 @@
 <section class="task">
-  <%= form_with model: @task, class: "task__form" do |f| %>
-    <%= f.text_field :title, class: "task__form--title", placeholder: "タスク名" %>
-    <%= f.text_area :description, class: "task__form--description", placeholder: "詳細" %>
-    <%= f.submit "作成", class: "task__form--button" %>
-  <% end %>
-
-  <% @tasks.all.each do |task| %>
-    <div class="task__container">
-      <div class="task__main">
-        <h2 class="task__main--title">
-          <%= task.title %>
-        </h2>
-        <p class="task__main--description">
-          <%= task.description %>
-        </p>
-      </div>
-      <%= link_to "✕", task_path(task.id), method: :delete, class: "task__container--done"%>
-    </div>
-  <% end %>
+  <%= render 'shared/task_form' %>
+  <div id="task_ajax">
+    <%= render 'shared/all_tasks' %>
+  </div>
 </section>

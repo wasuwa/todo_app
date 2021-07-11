@@ -1,0 +1,13 @@
+<% @tasks.all.each do |task| %>
+  <div class="task__container">
+    <div class="task__main">
+      <h2 class="task__main--title">
+        <%= task.title %>
+      </h2>
+      <p class="task__main--description">
+        <%= task.description %>
+      </p>
+    </div>
+    <%= link_to "✕", task_path(task.id), method: :delete, class: "task__container--done"%>
+  </div>
+<% end %>
