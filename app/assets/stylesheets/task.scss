@@ -39,11 +39,16 @@
       height: 80px;
       font-size: 16px;
       font-weight: 700;
+      margin-bottom: 10px;
     }
     &--button {
       display: block;
+      color: #fff;
       font-size: 16px;
       font-weight: 700;
+      background: #00bfff;
+      margin: 0 auto;
+      padding: 5px 30px;
     }
   }
 }
