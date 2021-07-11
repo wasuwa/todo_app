@@ -5,27 +5,17 @@
     <%= f.submit "作成", class: "task__form--button" %>
   <% end %>
 
-  <div class="task__container">
-    <div class="task__main">
-      <h2 class="task__main--title">タスク名</h2>
-      <p class="task__main--description">老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催</p>
+  <% @tasks.all.each do |task| %>
+    <div class="task__container">
+      <div class="task__main">
+        <h2 class="task__main--title">
+          <%= task.title %>
+        </h2>
+        <p class="task__main--description">
+          <%= task.description %>
+        </p>
+      </div>
+      <%= link_to "✕", root_path, class: "task__container--done"%>
     </div>
-    <%= link_to "✕", root_path, class: "task__container--done"%>
-  </div>
-
-  <div class="task__container">
-    <div class="task__main">
-      <h2 class="task__main--title">タスク名</h2>
-      <p class="task__main--description">老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催</p>
-    </div>
-    <%= link_to "✕", root_path, class: "task__container--done"%>
-  </div>
-
-  <div class="task__container">
-    <div class="task__main">
-      <h2 class="task__main--title">タスク名</h2>
-      <p class="task__main--description">老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催老舗製造メーカーが新卒でIT人材を採用できた秘訣とは？ DX推進に向けた、0からはじめるIT人材採用セミナー※8/5(木)12時開催</p>
-    </div>
-    <%= link_to "✕", root_path, class: "task__container--done"%>
-  </div>
+  <% end %>
 </section>
