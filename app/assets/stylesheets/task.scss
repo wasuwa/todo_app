@@ -13,7 +13,6 @@
         margin-bottom: 10px;
         color: #F6B352;
       }
-      &--goal_time {}
       &--description {
         font-size: 14px;
         line-height: 1.4em;
@@ -36,6 +35,17 @@
       margin-bottom: 10px;
       font-size: 16px;
       font-weight: 700;
+    }
+    &--goal_time {
+      color: #757575;
+      font-size: 16px;
+      font-weight: 700;
+      width: calc(100% / 3 - 7px);
+      padding: 15px 20px;
+      margin-bottom: 10px;
+    }
+    #task_goal_time_2i {
+      margin: 0 5px;
     }
     &--description {
       width: calc(100% - 37px);
