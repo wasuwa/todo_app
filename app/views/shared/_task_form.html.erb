@@ -1,6 +1,6 @@
 <%= form_with model: @task, class: "task__form" do |f| %>
   <%= f.text_field :title, class: "task__form--title", placeholder: "タスク名" %>
-  <%= f.date_select :goal_at, {use_month_numbers: true, default: { year: Date.today.year, month: Date.today.month, day: Date.today.day },}, {class: "task__form--goal_time" } %>
+  <%= f.datetime_select :goal_at, {use_month_numbers: true}, {class: "task__form--goal_time" } %>
   <%= f.text_area :description, class: "task__form--description", placeholder: "詳細" %>
   <%= f.submit "作成", class: "task__form--button" %>
 <% end %>
