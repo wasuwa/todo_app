@@ -4,11 +4,16 @@
       <h2 class="task__main--title">
         <%= task.title %>
       </h2>
-      <%= l task.goal_at %>
       <p class="task__main--description">
         <%= task.description %>
       </p>
     </div>
-    <%= link_to "✕", task_path(task.id), method: :delete, class: "task__container--done"%>
+    <div class="task__lemit">
+      <p class="task__lemit--text">期限:</p>
+      <p class="task__lemit--time">
+        <%= l task.goal_at %>
+      </p>
+    </div>
+    <%= link_to "✔", task_path(task.id), method: :delete, class: "task__container--done"%>
   </div>
 <% end %>

@@ -7,10 +7,12 @@
     padding: 30px;
     margin-top: 30px;
     .task__main {
+      width: 60%;
+      padding-right: 15px;
       &--title {
         font-size: 20px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin: 0 15px 10px 0;
         color: #F6B352;
       }
       &--description {
@@ -18,12 +20,26 @@
         line-height: 1.4em;
       }
     }
+    .task__lemit {
+      margin-left: auto;
+      padding-right: 10px;
+      &--text {
+        display: block;
+        color: #F6B352;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 5px 14px 0;
+      }
+      &--time {
+        font-size: 14px;
+      }
+
+    }
     &--done {
       display: block;
       font-size: 22px;
       font-weight: 700;
       color: #F68655;
-      padding-left: 20px;
       margin-left: auto;
     }
   }
@@ -36,7 +52,7 @@
       font-size: 16px;
       font-weight: 700;
     }
-    &--goal_time {
+    &--goal_at {
       color: #757575;
       font-size: 16px;
       font-weight: 700;
