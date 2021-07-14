@@ -1,4 +1,4 @@
-<%= render 'shared/error_message', { model: @task, column: @task.title } %>
+<%= render 'shared/error_message', model: @task %>
 <%= form_with model: @task, class: "task__form" do |f| %>
   <%= f.text_field :title, class: "task__form--title", placeholder: "タスク名" %>
   <%= f.datetime_select :goal_at, { use_month_numbers: true }, { class: "task__form--goal_at" } %>
