@@ -1,9 +1,5 @@
 <%= form_with model: @task, class: "task__form" do |f| %>
-  <% if @task.errors.any? %>
-      <% @task.errors.full_messages.each do |i| %>
-        <p><%= i %></p>
-      <% end %>
-  <% end %>
+  <%= render 'shared/error_message', { model: @task, column: @task.title } %>
   <%= f.text_field :title, class: "task__form--title", placeholder: "タスク名" %>
   <%= f.datetime_select :goal_at, { use_month_numbers: true }, { class: "task__form--goal_at" } %>
   <%= f.text_area :description, class: "task__form--description", placeholder: "詳細" %>

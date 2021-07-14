@@ -1,0 +1,5 @@
+<% unless model.errors.empty? %>
+  <% model.errors[:"#{column}"].each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
