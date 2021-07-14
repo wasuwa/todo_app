@@ -9,6 +9,6 @@ class Task < ApplicationRecord
   private
 
     def not_past_dates
-      errors.add(:goal_at, "過去の日時は指定できません") if goal_at < Time.current
+      errors.add(:goal_at, "に過去の日時は指定できません") if goal_at < Time.current
     end
 end

@@ -1,4 +1,15 @@
 ja:
+  activerecord:
+    attributes:
+      task:
+        title: タイトル
+        goal_at: 完了時刻
+        description: 説明
+  errors:
+    format: "%{attribute}%{message}"
+    messages:
+      blank: を入力してください
+      too_long: が長すぎます
   time:
     formats:
       default: "%Y年%m月%d日 %H時%M分"
