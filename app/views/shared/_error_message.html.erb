@@ -1,5 +1,9 @@
-<% unless model.errors.empty? %>
-  <% model.errors[:"#{column}"].each do |message| %>
-    <p><%= message %></p>
-  <% end %>
+<% if model.errors.any? %>
+  <ul class="errors">
+    <% model.errors.full_messages.each do |message| %>
+      <li class="errors__message">
+        <%= message %>
+      </li>
+    <% end %>
+  </ul>
 <% end %>

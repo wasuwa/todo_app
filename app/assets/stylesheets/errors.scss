@@ -1,0 +1,10 @@
+.errors {
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  background: #FC913A;
+  &__message {
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+  }
+}
